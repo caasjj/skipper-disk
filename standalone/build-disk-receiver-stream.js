@@ -114,7 +114,7 @@ module.exports = function buildDiskReceiverStream(options, adapter) {
       //  done(err);
       });
 
-      var __progress__ = r_buildProgressStream(options, __newFile, receiver__, outs__, adapter);
+      var __progress__ = r_buildProgressStream(options, __newFile, receiver__, outs__);
 
       // Finally pipe the progress THROUGH the progress stream
       // and out to disk.
